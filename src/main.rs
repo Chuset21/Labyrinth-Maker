@@ -1,3 +1,6 @@
+use labyrinth_maker::{Board, Difficulty};
+
 fn main() {
-    println!("Hello, labyrinth-maker!");
+    let board = Board::build_board_dif(Difficulty::VeryHard);
+    println!("{}", board);
 }
